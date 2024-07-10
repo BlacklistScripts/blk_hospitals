@@ -6,6 +6,10 @@ A simple Hospital script that lets players heal themselves by going to dedicated
 - Supports QB & OX Target & Markers
 - Supports ESX, QBCore, Qbox, Ox Core
 
+# Preview
+
+https://streamable.com/gz9xtn
+
 # Dependencies
 
 **Required**

@@ -32,10 +32,9 @@ function loadInteractions()
 
             function point:onEnter()
                 local model = lib.requestModel(v.Ped.model)
-
-
+                
                 entity = CreatePed(3, model, v.loc, v.Ped.heading, false, true)
-            
+                
                 if v.Ped.scenario then TaskStartScenarioInPlace(entity, v.Ped.scenario, 0, true) end
             
                 SetModelAsNoLongerNeeded(model)
