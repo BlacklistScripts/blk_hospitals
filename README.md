@@ -1,5 +1,5 @@
 # blk_hospitals
-A simple Hospital scripts that lets players heal themselves by going to dedicated locations.
+A simple Hospital script that lets players heal themselves by going to dedicated locations.
 
 - Highly Configurable
 - Highly Optimized (0.00ms Idle & 0.00 ~ 0.06 ms Active)
