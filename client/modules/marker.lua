@@ -29,7 +29,7 @@ function loadInteractions()
             end
 
             if self.currentDistance < 3 and IsControlJustReleased(0, 38) then
-                checkIn()
+                checkIn(v.MaxMedic)
             end
         end
     end

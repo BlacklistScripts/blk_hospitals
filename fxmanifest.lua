@@ -1,7 +1,7 @@
 fx_version 'adamant'
 game 'gta5'
 author 'Blacklist'
-version '1.0'
+version '1.1'
 lua54 'yes'
 
 shared_scripts {
@@ -12,6 +12,11 @@ shared_scripts {
 client_scripts {
     'client/*.lua',
     'client/modules/*.lua'
+}
+
+server_scripts {
+    'server/*.lua',
+    'server/modules/*.lua'
 }
 
 dependencies {

@@ -1,12 +1,17 @@
 local Config = lib.require('config')
 local stevo_lib = exports['stevo_lib']:import()
 
-function checkIn()
+function checkIn(maxMedics)
     local hlth = GetEntityHealth(PlayerPedId())
     local maxHlth = GetEntityMaxHealth(PlayerPedId())
+    local medics = lib.callback.await('blk_hospital:getMedics', false)
     local timer = maxHlth - hlth
-    if hlth == maxHlth then 
-            stevo_lib.Notify(Config.Notify.msg, 'error')
+    if medics >= maxMedics then
+        stevo_lib.Notify(Config.Notify.medic, 'error')
+    return
+end
+    if hlth == maxHlth then
+            stevo_lib.Notify(Config.Notify.health, 'error')
         return
     end
 

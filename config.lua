@@ -1,4 +1,7 @@
 return {
+    Framework = "QB", -- "ESX" : "QB"
+    AmbulanceJob = "ambulance",
+
     Interaction = {
         type = "target", -- "marker" : "target"
         
@@ -16,7 +19,8 @@ return {
     },
 
     Notify = {
-        msg = "You are perfectly fine, why are you here?" -- Displays if player is max health (doesnt need healing)
+        health = "You are perfectly fine, why are you here?", -- Displays if player is max health (doesnt need healing)
+        medic = "Put in a call, there seems to be enough EMS to respond." -- Displays if there is more medics than the max provided in the hospital
     },
 
     Progbar = {
@@ -32,6 +36,7 @@ return {
     Hospitals = {
         Eclipse_Med_Tower = {   -- Name doesnt matter
             loc = vec3(-676.7454, 313.2078, 82.0841),
+            MaxMedic = 1, -- Once there is more ems online than shown here, the player will not be able to use this doctor
             Ped = { -- Ignore if using marker
                 enabled = true, -- If a ped should be spawned for targeting.
                 heading = 175.5198,

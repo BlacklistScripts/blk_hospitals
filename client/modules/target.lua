@@ -16,7 +16,9 @@ function loadInteractions()
                     label = "Check In",
                     distance = Config.Interaction.Target.distance,
                     num = 1,
-                    action = checkIn,
+                    action = function()
+                        checkIn(v.MaxMedic)
+                    end,
                 },
             },
             distance = Config.Interaction.Target.radius,
